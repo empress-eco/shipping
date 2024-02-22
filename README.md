@@ -1,45 +1,62 @@
-## ERPNext Shipping
+<div align="center">
+![Project Logo](https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png
+<h1 align="center">Empress Shipping: Streamlining Your Shipping Operations</h1>
+<p align="center">
+A comprehensive shipping integration tool for businesses, designed to simplify and optimize your shipping process.
+<br />
+<a href="https://empress.eco/">Explore the Docs</a>
+·
+<a href="https://github.com/empress-eco/shipping/issues">Report Bug</a>
+·
+<a href="https://github.com/empress-eco/shipping/issues/new">Request Feature</a>
+</p>
+</div>
 
-A Shipping Integration for ERPNext with various platforms. Platforms integrated in this app are:
-- [Packlink](https://www.packlink.com/en-GB/)
-- [LetMeShip](https://www.letmeship.com/en/)
-- [SendCloud](https://www.sendcloud.com/home-new/)
+## About The Project
 
-## Features
-- Creation of shipment to a carrier service (e.g. FedEx, UPS) via LetMeShip, Packlink, and SendCloud. 
-- Compare shipping rates. 
-- Printing the shipping label is also made available within the Shipment doctype.
-- Templates for the parcel dimensions.
-- Shipment tracking.
+### 📖 Overview
+Empress Shipping is a robust shipping integration tool connecting various platforms such as Packlink, LetMeShip, and SendCloud to provide an all-inclusive solution for creating shipments, comparing rates, printing labels, and tracking shipments. Designed with businesses in mind, it streamlines your shipping operations, saving time and reducing complexity.
 
-## Installation
+### 🌟 Unique Features
+- Seamless integration with Packlink, LetMeShip, and SendCloud.
+- Efficient creation of shipments to various carrier services.
+- Comprehensive comparison of shipping rates for informed decisions.
+- Convenient printing of shipping labels directly from the application.
+- Handy parcel dimension templates for easy reference.
+- Real-time shipment tracking to stay updated.
 
-Install [on Frappe Cloud](https://frappecloud.com/marketplace/apps/shipping) or your own server:
+## Technical Stack and Setup Instructions
 
-```bash
-cd ~/frappe-bench
-bench get-app https://github.com/frappe/erpnext-shipping.git --branch version-14
-bench --site $MY_SITE install-app erpnext_shipping
+### Prerequisites
+To get started with Empress Shipping, you need to have an API key from your service provider. Each service provider has their own specific doctypes similar to those from the `Integrations` and can be enabled or disabled depending on your needs.
+
+### Installation
+Setting up Empress Shipping on your server is straightforward. Follow the steps below:
+
+```sh
+cd ~/Empress-bench
+bench get-app https://github.com/empress-eco/shipping.git --branch version-14
+bench --site $MY_SITE install-app Empress_shipping
 ```
 
-## Setup
-For the compare shipping rates feature to work as expected, you need to generate an API key from your service provider. Service providers have their own specific doctypes similar to those from the `Integrations`. They can be enabled or disabled depending on your needs.
+## Usage
+Fetch shipping rates by clicking the `Fetch Shipping Rates` button. Once you've chosen a rate, the shipment will be created for you. The app also allows you to generate shipping labels by clicking on the `Print Shipping Label` on top of the doctype.
 
-![LetMeShip 2020-08-05 09-54-28](https://user-images.githubusercontent.com/17470909/89377411-500c4f80-d724-11ea-8fe5-b11fec2a5c27.png)
+## Contribution Guidelines
+We welcome and appreciate contributions! To contribute, follow these steps:
 
-![Packlink 2020-08-05 09-53-47](https://user-images.githubusercontent.com/17470909/89377423-56023080-d724-11ea-8396-fb9f60a0d581.png)
+- Fork the Project
+- Create your Feature Branch (git checkout -b feature/AmazingFeature)
+- Commit your Changes (git commit -m 'Add some AmazingFeature')
+- Push to the Branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
 
-### Fetch Shipping Rates
-![core2](https://user-images.githubusercontent.com/17470909/89377460-70d4a500-d724-11ea-8550-a2813b936651.gif)
+Your ideas and code contributions can help enhance this project and benefit many businesses.
 
-You can see the list of shipping rates by clicking the `Fetch Shipping Rates` button. Once you picked a rate, it will create the shipment for you. 
+## License and Acknowledgements
 
-### Shipping Label
-![71bcfc9d-9d66-4a58-8238-1eeab4e9a24f 2020-08-05 09-48-32](https://user-images.githubusercontent.com/17470909/89377478-78944980-d724-11ea-8120-a5374c6e4c5e.png)
+### License
+This project is under the MIT License. Your contributions are also licensed under the same MIT License.
 
-The service provider will also provide the shipping label and to generate the label, click on the `Print Shipping Label` on top of the doctype.
-
------------------------
-#### License
-
-MIT
+### Acknowledgements
+We owe a debt of gratitude to the Empress Community, the architects behind the essential tools powering this project. Their innovation and dedication have laid the groundwork and functionalities we rely on. We are profoundly grateful for their pioneering work and ongoing support.
